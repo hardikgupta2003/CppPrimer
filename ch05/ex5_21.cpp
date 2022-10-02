@@ -3,12 +3,8 @@
 // uppercase letter.
 
 #include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
-
 #include <string>
-using std::string;
+using namespace std;
 
 int main() {
   string curr, prev;
@@ -27,5 +23,8 @@ int main() {
     prev = curr;
   }
 
-  if (!no_twice) cout << "no word was repeated." << endl;
+  if (!no_twice) {
+    cout << "no word was repeated." << endl;
+  }
+  return 0;
 }
